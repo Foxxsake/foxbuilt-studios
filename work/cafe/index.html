@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Oak Café — Example site by Foxbuilt Studios</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --cream:#faf4ea; --sand:#efe2cc; --brown:#3b2a1a; --muted:#7a6650; --green:#4f6b3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--cream); color:var(--brown); font:16px/1.65 Inter,system-ui,sans-serif; }
+  h1,h2,h3 { font-family:Fraunces,Georgia,serif; margin:0; line-height:1.1; }
+  a { color:inherit; }
+  .demo { background:#ff7a2f; color:#1a0c03; text-align:center; font-size:13px; font-weight:600; padding:7px 12px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:20px 24px; max-width:1000px; margin:0 auto; }
+  .logo { font:italic 500 26px Fraunces,serif; }
+  nav a { margin-left:18px; text-decoration:none; color:var(--muted); font-weight:600; font-size:15px; }
+  .hero { max-width:1000px; margin:0 auto; padding:60px 24px 80px; display:grid; gap:40px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); align-items:center; }
+  .hero h1 { font-size:clamp(42px,7vw,68px); }
+  .hero h1 em { color:var(--green); }
+  .hero p { color:var(--muted); font-size:18px; margin:18px 0 26px; }
+  .btn { display:inline-block; background:var(--brown); color:var(--cream); padding:13px 24px; border-radius:999px; text-decoration:none; font-weight:600; }
+  .art { aspect-ratio:1; border-radius:50% 50% 24px 24px; background:radial-gradient(circle at 50% 38%, #fff8ee 0 18%, #c79a66 19% 27%, #8a5a33 28% 34%, transparent 35%), linear-gradient(160deg,#d9bf98,#b88d5d); }
+  section { max-width:1000px; margin:0 auto; padding:60px 24px; }
+  h2 { font-size:36px; margin-bottom:26px; }
+  .menu { display:grid; gap:30px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+  .menu h3 { font-size:22px; color:var(--green); border-bottom:2px solid var(--sand); padding-bottom:8px; margin-bottom:10px; }
+  .menu div p { display:flex; justify-content:space-between; margin:8px 0; }
+  .menu span { color:var(--muted); }
+  .band { background:var(--sand); }
+  .visit { display:grid; gap:30px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  .visit h3 { font-size:20px; margin-bottom:8px; }
+  .visit p { margin:0; color:var(--muted); }
+  footer { text-align:center; padding:30px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="demo">Example site built by <a href="../../">Foxbuilt Studios</a>. Little Oak is not a real business.</div>
+<header><span class="logo">Little Oak</span><nav><a href="#menu">Menu</a><a href="#visit">Visit</a></nav></header>
+<div class="hero">
+  <div>
+    <h1>Good coffee, <em>slow mornings.</em></h1>
+    <p>A small neighbourhood café serving local roasts, proper breakfasts and cakes baked every morning.</p>
+    <a class="btn" href="#menu">See the menu</a>
+  </div>
+  <div class="art" role="img" aria-label="Illustration of a cup of coffee"></div>
+</div>
+<section id="menu">
+  <h2>Menu</h2>
+  <div class="menu">
+    <div>
+      <h3>Coffee</h3>
+      <p>Flat white <span>£3.40</span></p>
+      <p>Cappuccino <span>£3.30</span></p>
+      <p>Oat latte <span>£3.60</span></p>
+      <p>Filter of the week <span>£2.90</span></p>
+    </div>
+    <div>
+      <h3>Breakfast</h3>
+      <p>Sourdough &amp; avocado <span>£7.50</span></p>
+      <p>Full Little Oak <span>£10.50</span></p>
+      <p>Granola &amp; yoghurt <span>£5.80</span></p>
+      <p>Bacon bap <span>£5.20</span></p>
+    </div>
+    <div>
+      <h3>Bakes</h3>
+      <p>Cinnamon bun <span>£3.20</span></p>
+      <p>Lemon drizzle <span>£3.40</span></p>
+      <p>Brownie <span>£3.00</span></p>
+      <p>Cheese scone <span>£2.80</span></p>
+    </div>
+  </div>
+</section>
+<div class="band"><section id="visit">
+  <h2>Come and visit</h2>
+  <div class="visit">
+    <div><h3>Open</h3><p>Mon–Fri 7:30am – 4pm<br>Sat–Sun 8:30am – 3pm</p></div>
+    <div><h3>Find us</h3><p>4 Church Lane<br>Anytown AB1 2CD</p></div>
+    <div><h3>Say hello</h3><p>01753 000 000<br>Dogs and laptops welcome</p></div>
+  </div>
+</section></div>
+<footer>© Little Oak Café · Site by Foxbuilt Studios</footer>
+</body>
+</html>
