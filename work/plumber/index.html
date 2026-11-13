@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flowright Plumbing &amp; Heating — Example site by Foxbuilt Studios</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --blue:#0b4fd1; --sky:#1aa3ff; --ink:#0d1b2e; --muted:#5a6b82; --soft:#eef4fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink); font:16px/1.6 Inter,system-ui,sans-serif; }
+  h1,h2,h3 { margin:0; line-height:1.15; font-weight:800; letter-spacing:-.01em; }
+  a { color:inherit; }
+  .demo { background:#ff7a2f; color:#1a0c03; text-align:center; font-size:13px; font-weight:600; padding:7px 12px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:16px 24px; max-width:1040px; margin:0 auto; }
+  .logo { font-weight:800; font-size:21px; color:var(--blue); }
+  .call { background:var(--blue); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; font-weight:600; font-size:15px; }
+  .hero { background:linear-gradient(135deg,var(--blue),var(--sky)); color:#fff; }
+  .hero div { max-width:1040px; margin:0 auto; padding:80px 24px; }
+  .hero h1 { font-size:clamp(36px,6vw,58px); max-width:16ch; }
+  .hero p { font-size:19px; max-width:48ch; opacity:.92; margin:18px 0 28px; }
+  .btn { display:inline-block; background:#fff; color:var(--blue); padding:14px 24px; border-radius:10px; text-decoration:none; font-weight:700; margin-right:10px; }
+  .badges { display:flex; flex-wrap:wrap; gap:10px 22px; margin-top:28px; font-weight:600; font-size:15px; }
+  .badges span::before { content:"✓ "; }
+  section { max-width:1040px; margin:0 auto; padding:64px 24px; }
+  h2 { font-size:32px; margin-bottom:26px; }
+  .services { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+  .services div { background:var(--soft); border-radius:14px; padding:22px; }
+  .services h3 { font-size:18px; margin-bottom:6px; color:var(--blue); }
+  .services p { margin:0; color:var(--muted); font-size:15px; }
+  .reviews { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+  blockquote { margin:0; border:1px solid #dbe5f3; border-radius:14px; padding:22px; }
+  blockquote .stars { color:#f5a623; letter-spacing:2px; }
+  blockquote p { margin:8px 0; }
+  blockquote cite { color:var(--muted); font-style:normal; font-size:14px; }
+  form { display:grid; gap:14px; max-width:620px; }
+  label { display:grid; gap:6px; font-weight:600; font-size:15px; }
+  input, select, textarea { padding:12px 14px; border:1px solid #c9d6e8; border-radius:10px; font:16px Inter,sans-serif; }
+  button { justify-self:start; background:var(--blue); color:#fff; border:0; padding:14px 24px; border-radius:10px; font:700 16px Inter,sans-serif; cursor:pointer; }
+  .quote { background:var(--soft); }
+  footer { text-align:center; padding:28px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="demo">Example site built by <a href="../../">Foxbuilt Studios</a>. Flowright is not a real business.</div>
+<header><span class="logo">Flowright</span><a class="call" href="#quote">Get a quote</a></header>
+<div class="hero"><div>
+  <h1>Local plumbing and heating you can rely on.</h1>
+  <p>Boiler repairs, leaks and bathroom fits, done properly and on time by Gas Safe registered engineers.</p>
+  <a class="btn" href="#quote">Get a free quote</a>
+  <div class="badges"><span>Gas Safe registered</span><span>Same-day call-outs</span><span>12-month guarantee</span></div>
+</div></div>
+<section>
+  <h2>What we do</h2>
+  <div class="services">
+    <div><h3>Boiler repair &amp; servicing</h3><p>All major brands, with annual services from £75.</p></div>
+    <div><h3>Leaks &amp; emergencies</h3><p>Burst pipes and leaks, fixed fast, 7 days a week.</p></div>
+    <div><h3>Bathrooms</h3><p>Full refits, from design to the final tile.</p></div>
+    <div><h3>Radiators &amp; heating</h3><p>Power flushes, new radiators and smart thermostats.</p></div>
+  </div>
+</section>
+<section>
+  <h2>What customers say</h2>
+  <div class="reviews">
+    <blockquote><div class="stars">★★★★★</div><p>“Boiler died on a Sunday and they had it running by teatime. Brilliant.”</p><cite>— Sarah, Anytown</cite></blockquote>
+    <blockquote><div class="stars">★★★★★</div><p>“Tidy, on time and the price was exactly what they quoted.”</p><cite>— Mark, Nearby Village</cite></blockquote>
+    <blockquote><div class="stars">★★★★★</div><p>“Our new bathroom looks amazing. Would recommend to anyone.”</p><cite>— Priya, Anytown</cite></blockquote>
+  </div>
+</section>
+<div class="quote"><section id="quote">
+  <h2>Get a free quote</h2>
+  <form onsubmit="event.preventDefault(); this.innerHTML='<p><b>Thanks!</b> This is a demo form, so nothing was sent.</p>';">
+    <label>Name<input required></label>
+    <label>Phone<input type="tel" required></label>
+    <label>What do you need?<select><option>Boiler</option><option>Leak or emergency</option><option>Bathroom</option><option>Something else</option></select></label>
+    <label>Details<textarea rows="3"></textarea></label>
+    <button type="submit">Request quote</button>
+  </form>
+</section></div>
+<footer>© Flowright Plumbing &amp; Heating · Site by Foxbuilt Studios</footer>
+</body>
+</html>
